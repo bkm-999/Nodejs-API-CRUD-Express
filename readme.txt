@@ -130,7 +130,7 @@ app.put('/api/users/:id', (req, res) => {
 
 app.get('/api/users', (req, res) => {
     //Incase without express framework
-    // res.end(JSON.stringify(['user1','user2','user3','user4']));
+    // res.send(JSON.stringify(['user1','user2','user3','user4']));
     //Incase with express framework
     // res.send(['user1','user2', 'user3', 'user4']);
     res.send(users);
