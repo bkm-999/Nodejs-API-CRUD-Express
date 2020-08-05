@@ -22,11 +22,9 @@ const server = http.createServer((req, res) => {
 # Install npm install -g nodemon 
 # Query string parameters ==> "?sortBy=name" e.g http://localhost:7000/api/posts/2020/Aug?sortBy=name
 # The result of req.params.id is always string, can also change it to intiger by using parseInt(req.params.id);
-# The return of the joi module is a clss that be with pascalName(first letter is capital) in javascript, that why I used here with Joi name.
-# Schema is the shape of an object
+# The return/output of the "joi" module is a class therefore, I used here "Joi" name(first capital letter/pascal name(for classes' name) in javascript.
+# Schema(in this app) is the shape of an object.
 # After install latest version of the "joi" validation, in assign schema const must follow below structure:
-
-######################################################################
 
 # const schema = Joi.object({ name: Joi.string().min(4).required(),
                                age: Joi.number().min(3).required()
